@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.text{
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 2s;
+    color: #fff;
+    margin: auto;
+}
+span{
+    font-size: 100px;
+}
+.text1{
+    transform: scale(0);
+    transition-duration: 1s;
+}
+.ladno{
+    transition-duration: 2s;
+    margin-left: 200px;
+    transform: scale(1);
+}
+.text:hover .text1{
+    transform: scale(1);
+    margin-right: 500px;
+}
+.text:hover .ladno{
+    transform: scale(0);
+}
+@media (max-width: 500px){
+    span{
+        font-size: 60px;
+    }
+    .text:hover .text1{
+        transform: scale(1);
+        margin-right: 350px;
+    }
+}
